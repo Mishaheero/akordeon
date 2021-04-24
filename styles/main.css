@@ -1,0 +1,186 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  min-width: 320px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 300px;
+  background-color: darkcyan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 200px;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c9400f), to(#f07f7f));
+  background: linear-gradient(to bottom, #c9400f, #f07f7f);
+}
+
+.social {
+  width: 100px;
+  height: 300px;
+  border-right: 0.7px solid grey;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.social:hover {
+  width: 400px;
+}
+
+.social__icon {
+  width: 100px;
+  height: 300px;
+  background-color: lightblue;
+  background-image: url(../img/twitter.svg);
+  background-position: center;
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+.social__icon:hover {
+  background-color: lightskyblue;
+  background-size: 40%;
+  cursor: pointer;
+}
+
+.social__title {
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.social__title h1 {
+  font-weight: 700;
+  padding-bottom: 5px;
+  font-size: 30px;
+}
+
+.social__title p {
+  font-size: 14px;
+  color: grey;
+  letter-spacing: 1px;
+}
+
+.social__facebook {
+  background-image: url(../img/facebook.svg);
+}
+
+.social__facebook:hover {
+  background-color: darkslateblue;
+}
+
+.social__linkedin {
+  background-image: url(../img/linkedin.svg);
+}
+
+.social__linkedin:hover {
+  background-color: deepskyblue;
+}
+
+.social__instagram {
+  background-image: url(../img/instagram.svg);
+}
+
+.social__instagram:hover {
+  background-color: forestgreen;
+}
+
+.social__youtube {
+  background-image: url(../img/youtube.svg);
+}
+
+.social__youtube:hover {
+  background-color: red;
+}
+
+.social__tumblr {
+  background-image: url(../img/tumblr.svg);
+}
+
+.social__tumblr:hover {
+  background-color: #101050;
+}
+
+.social__dribbble {
+  background-image: url(../img/dribbble.svg);
+}
+
+.social__dribbble:hover {
+  background-color: #ce41a3;
+}
+/*# sourceMappingURL=main.css.map */

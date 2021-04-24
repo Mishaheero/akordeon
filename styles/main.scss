@@ -1,0 +1,96 @@
+@import 'base/base';
+@import 'base/mixins';
+@import 'base/variables';
+
+.container {
+    @include box(100%, 300px, darkcyan);
+    display: flex;
+    margin-top: 200px;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(201, 64, 15), rgb(240, 127, 127));
+}
+
+
+.social {
+    width: 100px;
+    height: 300px;
+    border-right: 0.7px solid grey;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.7s;
+    &:hover {
+        width: 400px;
+    }
+    &__icon {
+        @include box(100px, 300px, $main-color);
+        background-image: url(../img/twitter.svg);
+        background-position: center;
+        background-size: 25%;
+        background-repeat: no-repeat;
+        &:hover {
+           background-color: $second-color;
+           background-size: 40%;
+           cursor: pointer;
+        }
+    }
+    &__title {
+        @include box( 300px, 100%, white);
+        position: absolute;
+        top: 0;
+        left: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        h1 {
+            font-weight: 700;
+            padding-bottom: 5px;
+            font-size: 30px;
+        }
+        p {
+            font-size: 14px;
+            color: grey;
+            letter-spacing: 1px;
+        }
+    }
+    &__facebook {
+        background-image: url(../img/facebook.svg);
+        &:hover {
+            background-color: darkslateblue;
+        }
+    }
+    &__linkedin {
+        background-image: url(../img/linkedin.svg);
+        &:hover {
+            background-color: deepskyblue;
+        }
+    }
+    &__instagram {
+        background-image: url(../img/instagram.svg);
+        &:hover {
+            background-color: forestgreen;
+        }
+    }
+    &__youtube {
+        background-image: url(../img/youtube.svg);
+        &:hover{
+            background-color: red;
+        }
+    }
+    &__tumblr {
+        background-image: url(../img/tumblr.svg);
+        &:hover {
+            background-color: rgb(16, 16, 80);
+        }
+    }
+    &__dribbble {
+        background-image: url(../img/dribbble.svg);
+        &:hover {
+            background-color: rgb(206, 65, 163);
+        }
+    }
+}
+
